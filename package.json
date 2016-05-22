@@ -1,0 +1,39 @@
+{
+  "name": "academics-in-javascript",
+  "version": "1.0.0",
+  "description": "A collection of classic problems written and TDD'd in JavaScript",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rodoabad/academics-in-javascript.git"
+  },
+  "author": "Rodo Abad <rodoabad@gmail.com> (https://github.com/rodoabad)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rodoabad/academics-in-javascript/issues"
+  },
+  "homepage": "https://github.com/rodoabad/academics-in-javascript#readme",
+  "config": {
+    "ghooks": {
+      "commit-msg": "validate-commit-msg"
+    }
+  },
+  "engines": {
+    "node": ">=6.x"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "babel-eslint": "^6.0.4",
+    "code": "^2.3.0",
+    "eslint": "^2.10.2",
+    "eslint-config-rodoabad": "^1.0.0",
+    "eslint-plugin-react": "^5.1.1",
+    "ghooks": "^1.2.1",
+    "mocha": "^2.4.5",
+    "mocha-clean": "^1.0.0",
+    "validate-commit-msg": "^2.6.1"
+  },
+  "scripts": {
+    "test": "mocha ./test/unit",
+    "eslint": "eslint lib/** test/unit/**"
+  }
+}
