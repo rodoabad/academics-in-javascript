@@ -26,6 +26,20 @@
     }
   },
   "rules": {
-    "no-magic-numbers": 0
+    "no-magic-numbers": 0,
+    "func-style": [
+      2,
+      "declaration",
+      {
+        "allowArrowFunctions": true
+      }
+    ],
+    "newline-before-return": 0,
+    "prefer-arrow-callback": [
+      2,
+      {
+        "allowNamedFunctions": true
+      }
+    ]
   }
 }
