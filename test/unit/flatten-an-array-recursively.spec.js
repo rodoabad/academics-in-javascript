@@ -8,6 +8,7 @@ describe('Given an array to flatten recursively', () => {
         it('should return a flattened array', () => {
 
             const arrayToFlatten = [
+                0,
                 [
                     1,
                     [
@@ -23,6 +24,7 @@ describe('Given an array to flatten recursively', () => {
             ];
 
             const expectedArray = [
+                0,
                 1,
                 2,
                 3,
