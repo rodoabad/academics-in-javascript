@@ -3,7 +3,7 @@ const flattenArrayRecursive = require('../../lib/flatten-an-array-recursively');
 
 describe('Given an array to flatten', () => {
 
-    describe('where it contains arrays inside ', () => {
+    describe('where it contains arrays inside', () => {
 
         it('should return a flattened array', () => {
 
@@ -30,6 +30,37 @@ describe('Given an array to flatten', () => {
                 5,
                 6
             ];
+
+            expect(flattenArrayRecursive(arrayToFlatten)).deep.equal(expectedArray).and.not.deep.equal(arrayToFlatten);
+
+        });
+
+    });
+
+    describe('where it contains different types', () => {
+
+        it('should return a flattened array', () => {
+
+            /* eslint-disable no-undefined, quotes */
+
+            const arrayToFlatten = [
+                {},
+                [],
+                "",
+                undefined,
+                null,
+                123
+            ];
+
+            const expectedArray = [
+                {},
+                "",
+                undefined,
+                null,
+                123
+            ];
+
+            /* eslint-enable no-undefined, quotes */
 
             expect(flattenArrayRecursive(arrayToFlatten)).deep.equal(expectedArray).and.not.deep.equal(arrayToFlatten);
 
