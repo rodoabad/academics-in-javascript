@@ -1,13 +1,14 @@
 const {expect} = require('code');
-const flattenArrayRecursive = require('../../lib/flatten-an-array-recursively');
+const flattenAnArrayNonRecursively = require('../../lib/flatten-an-array-non-recursively');
 
-describe('Given an array to flatten recursively', () => {
+describe('Given an array to flatten non recursively', () => {
 
     describe('where it contains arrays inside', () => {
 
         it('should return a flattened array', () => {
 
             const arrayToFlatten = [
+                0,
                 [
                     1,
                     [
@@ -23,6 +24,7 @@ describe('Given an array to flatten recursively', () => {
             ];
 
             const expectedArray = [
+                0,
                 1,
                 2,
                 3,
@@ -31,7 +33,7 @@ describe('Given an array to flatten recursively', () => {
                 6
             ];
 
-            expect(flattenArrayRecursive(arrayToFlatten)).deep.equal(expectedArray).and.not.deep.equal(arrayToFlatten);
+            expect(flattenAnArrayNonRecursively(arrayToFlatten)).deep.equal(expectedArray).and.not.deep.equal(arrayToFlatten);
 
         });
 
@@ -62,7 +64,7 @@ describe('Given an array to flatten recursively', () => {
 
             /* eslint-enable no-undefined, quotes */
 
-            expect(flattenArrayRecursive(arrayToFlatten)).deep.equal(expectedArray).and.not.deep.equal(arrayToFlatten);
+            expect(flattenAnArrayNonRecursively(arrayToFlatten)).deep.equal(expectedArray).and.not.deep.equal(arrayToFlatten);
 
         });
 
