@@ -27,27 +27,6 @@
   },
   "rules": {
     "no-magic-numbers": 0,
-    "func-style": [
-      2,
-      "declaration",
-      {
-        "allowArrowFunctions": true
-      }
-    ],
-    "newline-before-return": 0,
-    "prefer-arrow-callback": [
-      2,
-      {
-        "allowNamedFunctions": true
-      }
-    ],
-    "max-depht": 0,
-    "init-declarations": [
-      2,
-      "never",
-      {
-        "ignoreForLoopInit": true
-      }
-    ]
+    "max-depth": 0
   }
 }
