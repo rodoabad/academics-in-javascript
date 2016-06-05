@@ -15,7 +15,7 @@
   "config": {
     "ghooks": {
       "commit-msg": "validate-commit-msg",
-      "pre-commit": "npm run eslint && npm run test"
+      "pre-commit": "npm run lint && npm run test"
     }
   },
   "engines": {
@@ -23,17 +23,15 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "babel-eslint": "^6.0.4",
     "code": "^2.3.0",
-    "eslint": "^2.10.2",
-    "eslint-config-rodoabad": "^1.4.0",
     "ghooks": "^1.2.1",
+    "katulong": "^2.0.0",
     "mocha": "^2.4.5",
     "mocha-clean": "^1.0.0",
     "validate-commit-msg": "^2.6.1"
   },
   "scripts": {
     "test": "mocha ./test/unit",
-    "eslint": "eslint lib/** test/unit/**"
+    "lint": "katulong lint"
   }
 }
