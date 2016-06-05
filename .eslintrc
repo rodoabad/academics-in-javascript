@@ -40,6 +40,14 @@
       {
         "allowNamedFunctions": true
       }
+    ],
+    "max-depht": 0,
+    "init-declarations": [
+      2,
+      "never",
+      {
+        "ignoreForLoopInit": true
+      }
     ]
   }
 }
