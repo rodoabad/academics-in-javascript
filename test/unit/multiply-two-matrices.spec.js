@@ -30,7 +30,7 @@ describe('Given two matrices A & B', () => {
 
                 // @formatter:on
 
-                expect(multiplyMatrices(matrixA, matrixB)).array().deep.equal(expectedNewMatrix);
+                expect(multiplyMatrices(matrixA, matrixB)).array().equal(expectedNewMatrix);
 
             });
 

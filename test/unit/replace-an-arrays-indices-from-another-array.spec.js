@@ -15,7 +15,7 @@ describe('Given two arrays', () => {
 
             // @formatter:on
 
-            expect(sortArray(arrayToSort, sortOrder)).deep.equal(expectedArray).and.not.deep.equal(arrayToSort);
+            expect(sortArray(arrayToSort, sortOrder)).equal(expectedArray).and.not.equal(arrayToSort);
 
         });
 

@@ -33,7 +33,7 @@ describe('Given an array to flatten recursively', () => {
                 6
             ];
 
-            expect(flattenArrayRecursive(arrayToFlatten)).deep.equal(expectedArray).and.not.deep.equal(arrayToFlatten);
+            expect(flattenArrayRecursive(arrayToFlatten)).equal(expectedArray).and.not.equal(arrayToFlatten);
 
         });
 
@@ -64,7 +64,7 @@ describe('Given an array to flatten recursively', () => {
 
             /* eslint-enable no-undefined, quotes */
 
-            expect(flattenArrayRecursive(arrayToFlatten)).deep.equal(expectedArray).and.not.deep.equal(arrayToFlatten);
+            expect(flattenArrayRecursive(arrayToFlatten)).equal(expectedArray).and.not.equal(arrayToFlatten);
 
         });
 
