@@ -25,7 +25,7 @@
   "devDependencies": {
     "code": "^3.0.0",
     "ghooks": "^1.2.1",
-    "katulong": "^2.2.0",
+    "katulong": "^2.4.1",
     "validate-commit-msg": "^2.6.1"
   },
   "scripts": {
