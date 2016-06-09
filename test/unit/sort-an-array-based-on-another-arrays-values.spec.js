@@ -3,7 +3,7 @@ const sortArrayBasedOnSortOrder = require('../../lib/sort-an-array-based-on-anot
 
 describe('Given two arrays', () => {
 
-    describe('where the first array will be re-arranged based on the value of each value in a second array', () => {
+    describe('where the first array will be re-arranged based on each value of the second array', () => {
 
         it('should return a sorted array', () => {
 

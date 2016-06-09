@@ -25,12 +25,13 @@
   "devDependencies": {
     "code": "3.0.0",
     "ghooks": "1.2.1",
-    "katulong": "2.4.2",
+    "katulong": "2.6.0",
     "validate-commit-msg": "2.6.1"
   },
   "scripts": {
+    "pkg:coverage": "katulong coverage",
     "pkg:lint": "katulong lint",
-    "pkg:test": "katulong test",
-    "test": "npm run pkg:lint && npm run pkg:test"
+    "pkg:test": "katulong test --reporter tap",
+    "test": "npm run pkg:lint && npm run pkg:coverage"
   }
 }
