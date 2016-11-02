@@ -19,19 +19,20 @@
     }
   },
   "engines": {
-    "node": ">=6.x"
+    "node": ">=7.x"
   },
   "dependencies": {},
   "devDependencies": {
-    "code": "3.0.0",
-    "ghooks": "1.2.1",
-    "katulong": "2.6.0",
-    "validate-commit-msg": "2.6.1"
+    "code": "4.0.0",
+    "eslint-config-rodoabad": "^1.13.1",
+    "ghooks": "1.3.2",
+    "katulong": "2.36.2",
+    "validate-commit-msg": "2.8.2"
   },
   "scripts": {
     "pkg:coverage": "katulong coverage",
-    "pkg:lint": "katulong lint",
+    "pkg:eslint": "katulong eslint",
     "pkg:test": "katulong test --reporter tap",
-    "test": "npm run pkg:lint && npm run pkg:coverage"
+    "test": "npm run pkg:eslint && npm run pkg:coverage"
   }
 }
