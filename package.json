@@ -23,6 +23,7 @@
   },
   "dependencies": {},
   "devDependencies": {
+    "chance": "^1.0.4",
     "code": "4.0.0",
     "eslint-config-rodoabad": "^1.13.1",
     "ghooks": "1.3.2",
@@ -32,7 +33,7 @@
   "scripts": {
     "pkg:coverage": "katulong coverage",
     "pkg:eslint": "katulong eslint",
-    "pkg:test": "katulong test --reporter tap",
+    "pkg:test": "katulong test --reporter spec",
     "test": "npm run pkg:eslint && npm run pkg:coverage"
   }
 }
